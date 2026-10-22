@@ -20,7 +20,7 @@ RUN set -x && \
     curl -sL https://github.com/Kitware/CMake/releases/download/v3.14.5/cmake-3.14.5-Linux-x86_64.tar.gz | tar xzf - -C /opt && \
     cp /opt/cmake-3.14.5-Linux-x86_64/bin/* /usr/local/bin/ && \
     cp -R /opt/cmake-3.14.5-Linux-x86_64/share/cmake-3.14 /usr/local/share/ && \
-    curl -sL https://dl.google.com/go/go1.13.1.linux-amd64.tar.gz 2> /dev/null | tar xzf - -C /usr/local && \
+    curl -sL https://dl.google.com/go/go1.26.10.linux-amd64.tar.gz 2> /dev/null | tar xzf - -C /usr/local && \
     mkdir -p /gopath/{src,bin} && \
     printf 'export GOPATH=/gopath\nexport PATH=$PATH:/usr/local/go/bin:/gopath/bin\n' > /root/.bash_profile && \
     printf '#!/usr/bin/env bash\nsource /root/.bash_profile\nexec /bin/bash $@\n' > /entrypoint && \
@@ -50,7 +50,7 @@ RUN set -x && \
     curl -sL https://github.com/Kitware/CMake/releases/download/v3.14.5/cmake-3.14.5-Linux-x86_64.tar.gz | tar xzf - -C /opt && \
     cp /opt/cmake-3.14.5-Linux-x86_64/bin/* /usr/local/bin/ && \
     cp -R /opt/cmake-3.14.5-Linux-x86_64/share/cmake-3.14 /usr/local/share/ && \
-    curl -sL https://dl.google.com/go/go1.13.1.linux-amd64.tar.gz 2> /dev/null | tar xzf - -C /usr/local && \
+    curl -sL https://dl.google.com/go/go1.26.10.linux-amd64.tar.gz 2> /dev/null | tar xzf - -C /usr/local && \
     mkdir -p /gopath/{src,bin} && \
     printf 'export GOPATH=/gopath\nexport PATH=$PATH:/usr/local/go/bin:/gopath/bin\n' > /root/.bash_profile && \
     printf '#!/usr/bin/env bash\nsource /root/.bash_profile\nexec /bin/bash $@\n' > /entrypoint && \
@@ -80,7 +80,7 @@ RUN set -x && \
     curl -sL https://github.com/Kitware/CMake/releases/download/v3.14.5/cmake-3.14.5-Linux-x86_64.tar.gz | tar xzf - -C /opt && \
     cp /opt/cmake-3.14.5-Linux-x86_64/bin/* /usr/local/bin/ && \
     cp -R /opt/cmake-3.14.5-Linux-x86_64/share/cmake-3.14 /usr/local/share/ && \
-    curl -sL https://dl.google.com/go/go1.13.1.linux-amd64.tar.gz 2> /dev/null | tar xzf - -C /usr/local && \
+    curl -sL https://dl.google.com/go/go1.26.10.linux-amd64.tar.gz 2> /dev/null | tar xzf - -C /usr/local && \
     mkdir -p /gopath/{src,bin} && \
     printf 'export GOPATH=/gopath\nexport PATH=$PATH:/usr/local/go/bin:/gopath/bin\n' > /root/.bash_profile && \
     printf '#!/usr/bin/env bash\nsource /root/.bash_profile\nexec /bin/bash $@\n' > /entrypoint && \
